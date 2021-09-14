@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+.fa-inverse {
+    color: #fff;
+    background-color: #c3a98a;
+    border-radius: 50%;
+}
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-top: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.button {
+    background-color:#c3a98a;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-weight: 300;
+}
+button.btn.explore-btn {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-weight: 300;
+}
+i.fa.fa-play {
+    margin-right: 6px;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 8px;
+	color:#fff;
+}
+.marketing-customer {
+    text-align: center;
+    background-color: #ccb8a1;
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+.marketing-customer h1, p {
+    color: #fff;
+	font-weight:400;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 300px;
+    background-color: #f3bf83bd;
+    position: absolute;
+	padding-top: 85px;
+    padding-left: 150px;
+}
+.column1 {
+    float: right;
+    width: 60%;
+    padding: 0px;
+    height: 300px;
+    background-image: url(https://www.indegene.com/sites/default/files/Solution_MarketingandCustomerExperience_CreativeandDesign_Banner.jpg);
+	position:intial;
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 300px;
+
+    position: absolute;
+	padding-top: 85px;
+    padding-left: 150px;
+}
+.column2 p{
+color:#000;
+}
+.column3 {
+    float: right;
+    width: 50%;
+    padding: 0px;
+    height: 300px;
+    
+	position:intial;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.digital h4{
+    color: #000;
+    font-weight: 400;
+    
+    font-size: 20px;
+}
+.marketing-customer1{
+   text-align:center;
+}
+.marketing-customer1 h4{
+   text-align:center;
+   margin-block-end: 0.33em;
+}
+.marketing-customer1 h5 {
+    color: #de87b0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+i.fa.fa-camera-retro.fa-5x {
+    color: #fff;
+    background-color: #c3a98a;
+    border-radius: 50%;
+    float: right;
+}
+.fa-5x {
+    font-size: 5em;
+    padding: 30px;
+}
+.column2a {
+    float: left;
+    width: 70%;
+    padding: 0px;
+   
+}
+.column2a p{
+color:#de87b0;
+text-align:justify;
+}
+.column3a {
+    float: right;
+    width: 20%;
+    padding: 0px;
+  
+}
+.column2a h4{
+    text-align: end;
+    margin-block-start: 0.33em;
+    margin-block-end: 0em;
+}
+.column7a h4{
+  
+    margin-block-start: 0.33em;
+    margin-block-end: 0em;
+}
+.column4a {
+    float: left;
+    width: 48%;
+    padding-top: 30px;
+   
+    padding-left: 100px;
+}
+
+.column5a {
+    float: left;
+    width: 65%;
+    padding: 0px;
+    height: 300px;
+}
+.column5a p{
+color:#000;
+text-align:justify;
+}
+.column5b {
+    float: right;
+    width: 20%;
+    padding: 0px;
+    height: 300px;
+    
+	position:intial;
+}
+.column2a h4{
+text-align:end;
+}
+.column5 {
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+    
+    padding-left: 20px;
+	padding-right: 100px;
+}
+
+
+
+
+.column6a {
+    float: left;
+    width: 20%;
+    padding: 0px;
+   
+	 margin-left: 20px;
+}
+.column7a p{
+   color:#de87b0;
+   text-align:justify;
+}
+.column7a {
+    float: right;
+    width: 70%;
+    padding: 0px;
+}
+.column6a h4{
+text-align:end;
+}
+.fa-5x {
+    font-size: 4em;
+    padding: 20px;
+}
+i.fa.fa-flag.fa-5x {
+    color: #fff;
+    background-color: #c3a98a;
+    border-radius: 50%;
+    float: right;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <img src="img/indi.png" class="img-responsive" style="width:30%" alt="Image">
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="fa-stack fa-lg">
+       <i class="fa fa-circle fa-stack-2x"></i>
+       <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+    </span>
+  </div>
+</div>
+<div class="marketing-customer">
+   <h1>Enterprise Marketing and Customer Experience</h1>
+   <p>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</p>
+   <button class="button button2">The Global Transition</button>
+   <button class="btn explore-btn"><i class="fa fa-play"></i>Explore</button>
+</div>
+
+<div class="row">
+  <div class="column digital" style="">
+   <h4>THE DIGITAL SAVVY PHARMA MARKETER 2020</h4>
+   <p>"Must have tool for every pharm marketer"</p>
+   
+   <button class="btn explore-btn"><i class="fa fa-play"></i>Download</button>
+  </div>
+  <div class="column1" style="">
+  <!---  <img src="img/Solution_Marketingand.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+  </div>
+</div>
+<div class="marketing-customer1">
+   <h4>COMPANY</h4>
+   <h5>services</h5>
+</div>
+
+<div class="row">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+</body>
+</html>
